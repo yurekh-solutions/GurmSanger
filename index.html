@@ -286,6 +286,7 @@
             font-weight: 400;
             color: var(--text-dark);
             margin-bottom: clamp(1rem, 3vh, 1.5rem);
+            white-space: nowrap;
         }
 
         .companies-section .section-divider {
@@ -435,6 +436,10 @@
            RESPONSIVE
         ══════════════════════════════════ */
         @media (max-width: 560px) {
+            .companies-section h2 {
+                font-size: clamp(1.1rem, 5.5vw, 1.4rem);
+            }
+
             .contact-section {
                 grid-template-columns: 1fr;
                 gap: 1.5rem;
