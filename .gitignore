@@ -1,0 +1,5 @@
+*.py
+*.png
+!naaya-logo-sidebar.png
+.DS_Store
+Thumbs.db
