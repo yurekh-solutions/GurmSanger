@@ -42,7 +42,7 @@
             position: fixed;
             top: 0;
             left: 0;
-            width: clamp(48px, 9vw, 120px);
+            width: clamp(48px, 9Svw, 120px);
             height: 100vh;
             height: 100dvh;
             background: var(--navy);
@@ -352,7 +352,7 @@
             align-items: center;
             justify-content: space-between;
             gap: 1rem;
-            padding: clamp(1.25rem, 3vh, 2rem) clamp(1.25rem, 5vw, 4rem) clamp(1.5rem, 4vh, 2.5rem);
+            padding: clamp(1.25rem, 3vh, 2rem) clamp(1.25rem, 5vw, 4rem) clamp(0.75rem, 2vh, 1.5rem);
             max-width: 900px;
             width: 100%;
             margin: 0 auto;
@@ -366,6 +366,29 @@
             letter-spacing: 0.28em;
             text-transform: uppercase;
             color: var(--text-muted);
+        }
+
+        .footer-credit {
+            width: 100%;
+            text-align: center;
+            padding: clamp(0.75rem, 2vh, 1rem) clamp(1.25rem, 5vw, 4rem) clamp(1.25rem, 3vh, 1.75rem);
+            max-width: 900px;
+            margin: 0 auto;
+            border-top: 1px solid var(--border-light);
+        }
+
+        .footer-credit a {
+            font-family: 'Inter', sans-serif;
+            font-size: clamp(0.5rem, 1.1vw, 0.6rem);
+            font-weight: 400;
+            letter-spacing: 0.08em;
+            color: var(--text-muted);
+            text-decoration: none;
+            transition: color 0.25s ease;
+        }
+
+        .footer-credit a:hover {
+            color: var(--gold);
         }
 
         .btn-get-in-touch {
@@ -463,6 +486,10 @@
             .footer {
                 flex-direction: column;
                 align-items: stretch;
+            }
+
+            .footer-credit {
+                padding: clamp(0.75rem, 2vh, 1rem) clamp(1rem, 3vw, 1.5rem) clamp(1rem, 2vh, 1.25rem);
             }
         }
         
@@ -584,6 +611,11 @@
                 </svg>
             </button>
         </footer>
+
+        <!-- Footer Credit -->
+        <div class="footer-credit">
+            <a href="https://ainos-ywu0.onrender.com/" target="_blank" rel="noopener noreferrer">Designed &amp; Developed with AINOS by YS</a>
+        </div>
     </div>
 
     <!-- Toast -->
